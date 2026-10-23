@@ -1,0 +1,16 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/cs-group/integrations
+- https://n8n.io/integrations/cs-group/
+- https://composio.dev/toolkits/cs-group
+- https://monid.ai/tools/cs-group
+checked:
+- https://composio.dev/toolkits/cs-group
+- https://monid.ai/tools/cs-group
+- https://n8n.io/integrations/cs-group/
+- https://zapier.com/apps/cs-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

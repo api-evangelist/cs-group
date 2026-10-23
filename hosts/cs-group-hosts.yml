@@ -1,0 +1,35 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.cs-soprasteria.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: cs-soprasteria.com
+  role: api
+  relation: own
+- host: www.cs-soprasteria.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Newsroom
+  - Website
+  serves: []
+  registrable_domain: cs-soprasteria.com
+  role: website
+  relation: own

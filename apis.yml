@@ -1,23 +1,66 @@
 aid: cs-group
+
 name: CS Group
-description: 'CS Group is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'CS Group is a European mid‑size engineering and technology company specializing in designing, integrating and operating advanced information and communication systems for critical sectors such as defense, space, aerospace, transport, energy and industry 4.0. The group delivers solutions ranging from surveillance and command systems, tactical communications, cybersecurity, safe industrial embedded systems, data intelligence and digitalization of industrial processes, to simulation and training platforms. With a strong focus on innovation and research, CS Group collaborates closely with clients to develop tailored architectures that meet operational requirements and future‑proof their missions.'
+
 url: https://raw.githubusercontent.com/api-evangelist/cs-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Engineering
+- Defense
+- Space
+- Aerospace
+- Energy
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/cs-group-hosts.yml
+- type: TermsOfService
+  url: https://www.cs-soprasteria.com/en/legal-notice/
+- type: Newsroom
+  url: https://www.cs-soprasteria.com/en/newsroom/
+- type: DomainSecurity
+  url: security/cs-group-domain-security.yml
 - type: Website
   url: https://www.cs-soprasteria.com/en/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.cs-soprasteria.com/en/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
